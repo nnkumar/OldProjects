@@ -1,0 +1,54 @@
+
+<script type="text/javascript" >
+$(function(){
+  setAutoComplete("url", "results", "/lookup?query=");
+});
+</script>
+<br><p align="center"><font size="6">Open UVL</font></p>
+<div id="loading"> </div>
+<form method="post"  onsubmit="return false" name="algnfrm" id="algnfrm" action="/publicuvl/" >
+
+<p align="center"> <table style="width: 654px; height: 316px;" cellpadding="15" cellspacing="0">
+<tbody>
+<tr>
+
+<td align="right">
+<p>Url</p>
+
+</td>
+<td align="left"> <input name="url" id="url" maxlength="200" size="25" value="{{url}}" type="text"> </td>
+</tr>
+
+          <TR>
+            <TD ALIGN="right">
+              <P>Username</P>
+            </TD>
+            <TD ALIGN="left">
+              <INPUT TYPE="text" NAME="uname" id="uname" MAXLENGTH="30" SIZE="25" value={{uname}}>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="right">
+              <P> Password</P>
+            </TD>
+            <TD ALIGN="left">
+              <INPUT TYPE="PASSWORD" NAME="pwd" id="pwd" MAXLENGTH="25" SIZE="25" >
+            </TD>
+          </TR>
+
+	    <TR>
+            <TD COLSPAN="2">
+              <P ALIGN="center">
+                <INPUT TYPE="SUBMIT" NAME="Submit" VALUE="Login" onclick="return getresp();">
+<a href="/login/"> <INPUT TYPE="button" NAME="cancel" VALUE="Done" > </a>
+          </form>    </P>
+            </TD>
+          </TR>
+
+<tr>
+<td colspan="2"> </td>
+</tr>
+</tbody>
+</table> </p>
+
+</form>

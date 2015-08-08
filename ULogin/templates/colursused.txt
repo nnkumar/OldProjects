@@ -1,0 +1,10 @@
+color->"#94C1D5" for left side bar,
+"#126B9B"--> bottom dark color
+
+"#0033ee" -->login box color, little dark blue
+#79BAEC --> light blue
+#147EB7--> dark blue    bottom may be
+
+"#1D72A0" very dark bottom may be
+
+

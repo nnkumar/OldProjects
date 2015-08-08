@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+{% include 'shared/home_hdr.html' %}
+</head>
+<body  leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+<rdoctype transitional//en="" 4.01="" html="" -//w3c//dtd="" public=""></rdoctype>
+<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tbody>
+<tr>
+<td valign=top height=113>
+<table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 120px; background-color: rgb(23, 2, 93);" height="80">
+<p align="left"><font color="#04c470" size="9"> <font color="#ff0000"> U</font>V<font color="#cdcdcd">Login<sup><font color="#ffffff" size="2">TM</font></sup><sub><font color="#ffffff" size="2">Beta</font></sub>
+</font> </font></p>
+</td>
+<td style="text-align: center; background-color: rgb(23, 2, 93);" >
+<font color="#ff0000" size="6"> "Simple
+and
+Secure" </font>
+</td>
+</tr>
+<tr>
+<td  align="left" bgcolor="#bde562" width=60% height="33" valign="center">
+<ul id="maintab">
+ <li id="bt_sites" class="selected"><a href="#" onclick="jselect('bt_sites');return ajax_fetch('/sites/');">home</a></li>
+<li id="bt_addsite" ><a href="/home/siteadd" >add site</a></li>
+<li id="bt_ouvl" ><a href="/home/openuvl/" >OpenUVL</a></li>
+            <li id="bt_set"><a href="/home/settings/" >settings</a></li>
+                <li id="bt_dmail"><a href="#" onclick="jselect('bt_dmail');return ajax_fetch('/dmail/');return false;" bgcolour="#4CC417">Dmail</a>
+		  <li><a href="/logout/">logout</a></li>
+</ul>
+</td>
+<td  bgcolor="#bde562"><p align=center>
+<font size=3><b>{{user}}'s home <b></font></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!------------------------------>
+
+<tr>
+
+<td bgcolor="#ffffff" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="40">&nbsp;</td>
+<td><!------------------our doc--------->
+<div id="uid_main">
+{% include 'partials/Uid/_sites.html' %}
+
+</div>
+<!----------------------------->
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor="#147eb7" height="24"></td>
+</tr>
+<tr>
+<td bgcolor="#1d72a0" height="44" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td class="baseline" height="26" width="30%">&nbsp;&nbsp;&copy; 2008 UVLogin.com.</td>
+<td> <a href="/tos/" target="_blank"><font color="#ffffff" size="3"><u>Terms </u></font></a>
+</td>
+<td> <a href="/help/"><font color="#ffffff" size="3"><u>Help </u></font></a>
+</td>
+<td> <a href="#" onclick="return ajax_fetch('/contact/');"><font color="#ffffff" size="3"><u>Contact Us </u></font></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>

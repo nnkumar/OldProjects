@@ -1,0 +1,59 @@
+<table height=22px border=0 width=100%>
+<tr>
+<td colspan=2 align=right>
+<ul id="maintab">
+<li class="selected"><a href="#" onclick="return ajax_fetch('/settings/');">Profile</a> </li>
+
+<li><a href="#" onclick="return ajax_fetch('/setpwd/');">Password</a> </li>
+<li><a href="#" onclick="return ajax_fetch('/setsl2/');">SL2</a> </li>
+<li><a href="#" onclick="return ajax_fetch('/setrecv/');">Recovery</a> </li>
+</ul>
+</td></tr></table>
+<br>
+<p align="center"><font size="6">Profile</font></p>
+<form method="GET" action="/settings/">
+<p align=center>
+ 	  <table style="background-color: rgb(252, 233, 178); width: 654px; height: 216px;" cellpadding="15" cellspacing="0">
+          <TR>
+            <TD ALIGN="right">
+              <P>First name</P>
+      	      </TD>
+            <TD ALIGN="left">
+              <INPUT TYPE="TEXT" NAME="fn" MAXLENGTH="15" SIZE="20" value={{fn}}>
+            </TD>
+          </TR>
+<TR>            <TD ALIGN="right">
+              <P>Last name</P>
+              </TD>
+            <TD ALIGN="left">
+              <INPUT TYPE="TEXT" NAME="ln" MAXLENGTH="15" SIZE="20" value={{ln}}>
+            </TD>
+          </TR>
+
+  <TR>
+                <TD ALIGN="right">
+                  <p>Email id</p>
+                </td>
+                <td align="left">
+                  <input type="text" name="mail" maxlength="30"
+ size="20" value={{mail}}>
+                </td>
+            </tr>
+
+
+<!------------------------------------------------>
+
+
+	    <TR>
+            <TD COLSPAN="2">
+              <P ALIGN="center">
+                <INPUT TYPE="SUBMIT" id="sub" NAME="Submit" VALUE="Update "> <!onclick="return ajax_fetch('/settings/');">
+       <INPUT TYPE="button" NAME="cancel" VALUE="Cancel" onclick="return ajax_fetch('/sites/');"> 
+          </form>    </P></P>
+            </TD>
+          </TR>
+	    <TR>
+            <TD COLSPAN="2">
+            </TD>
+          </TR>
+        </TABLE> <br>

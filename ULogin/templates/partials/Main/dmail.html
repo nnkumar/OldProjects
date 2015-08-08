@@ -1,0 +1,42 @@
+<font size=3><br><font color=#ff0000 size=5>D</font><font size=5 color=#0000ff>mail</font><br><br>
+Enter the id you want to view the inbox for.
+
+    <form method="GET" action="#" onsubmit="return ajax_fetch('/dmail/?q='+document.getElementById('q').value);">
+            <input type="text" name="q" id="q" value=""><b>@usignin.com</b>
+        <br>
+         
+	<input type="submit" value="Check Mail">
+    </form>
+{% if query%}
+	<h2>{{c}} Mails for {{ query|escape }}@netid.co.in:</h2>
+{% if inbox %}
+	{% for m in inbox %}
+		{{m.body}}
+	{%endfor%}
+
+{% endif %}
+{% endif %}
+<br><br><br>
+<a href="#" onclick="document.getElementById('dmailwht').style.visibility='visible';">
+<font size=2 color=#0000ff>What is Dmail?</font></a>
+<div id="dmailwht"  style="visibility:hidden">
+<h1>Disposible Email</h1>
+
+<p>Tired of spams or disclosing your email addresses???<br>
+Majority of sites will require you to give them your email ids for registering with them. If your are one to hate such thing them Dmail is for you. <! T
+his will have a great chance of spamming your account. ></p>
+<p>
+ Dmail or the disposible  email is one which can
+ be given to sites or people for temporary usage like registration.
+
+Dmail  have no password associated with it.
+Any one can check the mails to its any ids after giving them to sites for registration.
+</p>
+<p> For eg: you can give
+anonymous@usignin.com (or anyname@usignin.com) to any sites and get the activation link they send by checking mails to that id in our Dmail inbox.
+<p>
+This will eliminate the need to <br>1. reveal your accounts.<br>
+2. need of login to them. <br> 3. chance of spamming them.
+<p>
+</div>
+</font>

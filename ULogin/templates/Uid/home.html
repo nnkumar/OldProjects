@@ -1,0 +1,95 @@
+<HTML>
+
+	<HEAD>
+{% include 'shared/home_hdr.html' %}
+    <link rel="stylesheet" type="text/css" href="/site_media/css/styles.css">
+<script type="text/Javascript" src="/site_media/scripts/jquery.js"></script>
+	</HEAD>
+
+
+
+	<BODY class="landing" >
+
+<script type="text/Javascript" >
+
+$(document).ready(function(){
+
+$("#home").click(function(){
+
+	  $(".landing_tab_selected").slideUp("fast");
+	  $(".landing_tab").slideDown("fast");
+	  $("#home").slideUp("fast");
+	  $("#home_sel").slideDown("slow");
+	  
+	});
+
+});
+
+
+$(document).ready(function(){
+
+$("#we").click(function(){
+	  $(".landing_tab_selected").slideUp("fast");
+	  $(".landing_tab").slideDown("fast");
+	  $("#we").slideUp("fast");
+	  $("#we_sel").slideDown("slow");
+	  
+	});
+
+});
+
+</script>
+		<CENTER>
+		<DIV class="container">
+
+			<DIV class="header">
+				<div>
+					<img src="/site_media/images/main_logo.png">
+
+					
+				</div>
+			</DIV>
+
+			<DIV class="data_holder">
+				<DIV class="landing_links">
+					<a href='/home/'><div button class="landing_tab" id="home"> Home</div></a>
+					<div class="landing_tab_selected" id="home_sel">Home</div>
+
+					<a href='/signup/'><div class="landing_tab" id="we">Add Site</div></a>
+					<div class="landing_tab_selected" id="we_sel">Add Site</div>
+
+
+					<div class="landing_tab">Open UVL</div>
+					<div class="landing_tab_selected">Open UVL</div>
+
+
+					<div class="landing_tab" id="contact">Settings</div>
+					<div class="landing_tab_selected" id="contact_sel">Settings</div>
+
+					<div class="landing_tab">D Mail</div>
+					<div class="landing_tab_selected">D Mail</div>
+
+
+					<div class="landing_tab">Logout</div>
+					<div class="landing_tab_selected">Logout</div>
+				</DIV>
+				<DIV class="landing_data">
+
+{% include 'partials/Uid/_sites.html' %}
+				</DIV>			
+
+			</DIV>
+			
+
+
+
+
+		</DIV>
+		</CENTER>
+	
+
+	</BODY>
+
+
+
+</HTML>

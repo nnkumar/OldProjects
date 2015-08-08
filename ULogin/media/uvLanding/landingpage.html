@@ -1,0 +1,99 @@
+<HTML>
+
+	<HEAD>
+{% include 'shared/main_hdr.html' %}
+<LINK REL=Stylesheet HREF="styles.css" TYPE="text/css" NEDIA=sreen>
+<script type="text/Javascript" src="/site_media/testscripts/jquery.js"></script>
+	</HEAD>
+
+
+
+	<BODY class="landing" >
+
+<script type="text/Javascript" >
+
+$(document).ready(function(){
+
+$("#home").click(function(){
+
+	  $(".landing_tab_selected").slideUp("fast");
+	  $(".landing_tab").slideDown("fast");
+	  $("#home").slideUp("fast");
+	  $("#home_sel").slideDown("slow");
+	  
+	});
+
+});
+
+
+$(document).ready(function(){
+
+$("#we").click(function(){
+	  $(".landing_tab_selected").slideUp("fast");
+	  $(".landing_tab").slideDown("fast");
+	  $("#we").slideUp("fast");
+	  $("#we_sel").slideDown("slow");
+	  
+	});
+
+});
+
+</script>
+		<CENTER>
+		<DIV class="container">
+
+			<DIV class="header">
+				<div>
+					<img src="/site_media/images/main_logo.png">
+
+					<div class="login_box">
+						User Name:
+						<input type="textbox">
+						Password:
+						<input type="password">
+						<input type="button" value="Login">
+					<a href="#" style="color:#00aaFF; padding-right:50px;padding-left:30px;">Forgot Password?</a> | 
+					<a href="#" style="color:#00aaFF; padding-right:30px;padding-left:50px;">Join UVLoGin</a>
+					</div>
+				</div>
+			</DIV>
+
+			<DIV class="data_holder">
+				<DIV class="landing_links">
+					<div class="landing_tab" id="home">Login</div>
+					<div class="landing_tab_selected" id="home_sel">Login</div>
+
+					<div class="landing_tab" id="we">Register</div>
+					<div class="landing_tab_selected" id="we_sel">Register</div>
+
+
+					<div class="landing_tab">Open UVL</div>
+					<div class="landing_tab_selected">Open UVL</div>
+
+					<div class="landing_tab">D Mail</div>
+					<div class="landing_tab_selected">D Mail</div>
+
+					<div class="landing_tab" id="contact">Contact Us</div>
+					<div class="landing_tab_selected" id="contact_sel">Contact Us</div>
+
+					<div class="landing_tab">Develop</div>
+					<div class="landing_tab_selected">Develop</div>
+				</DIV>
+				<DIV class="landing_data">
+				</DIV>			
+
+			</DIV>
+			
+
+
+
+
+		</DIV>
+		</CENTER>
+	
+
+	</BODY>
+
+
+
+</HTML>

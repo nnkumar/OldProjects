@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>UVLogin Register</title>
+
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="keywords" content="ulogin,usignin,uvlogin,secure,simple,simple and secure,security,secure login, safe login,secure signin,safe signin,Dmail,disposible mail, throwaway email, spam protection,Sl2login,keyloggers,keylogger protect" />
+<meta content="Simple and secure account management site. Allows you to login in one click and protects you from keyloggers" name="description">                                                             <meta content="uvlogin.com" name="Author">      
+<meta content="index, follow" name="robots">
+<meta content="15 days" name="revisit-after">
+<meta content="global" name="distribution">
+<meta content="general" name="rating">
+<meta content="english" name="Content-Language">
+<link href="../static/images/favicon.ico" rel="shortcut icon">
+<script language="JavaScript" type="text/JavaScript" src="https://www.uvlogin.com/static/images/uln_main.js"></script>
+<link href="https://www.uvlogin.com/static/images/newulogin.css" rel="stylesheet" type="text/css">
+</head>
+<body  leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+<rdoctype transitional//en="" 4.01="" html="" -//w3c//dtd="" public=""></rdoctype>
+<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tbody>
+<tr>
+<td valign="top" height=113>
+<table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 120px; background-color: rgb(23, 2, 93);" height="80">
+<p align="center"><font color="#04c470" size="9"> <font color="#ff0000"> U</font>V<font color="#cdcdcd">Login<sup><font color="#ffffff" size="2">TM</font></sup><sub><font color="#ffffff" size="2">Beta</font></sub>
+</font> </font></p>
+</td>
+<td style="text-align: center; background-color: rgb(23, 2, 93);" >
+<font color="#ff0000" size="6"> "Simple
+and
+Secure" </font>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center" bgcolor="#bde562" height="33" valign="bottom">
+<ul id="maintab">
+<li ><a href="/login/">Login</a></li>
+<li id="bt_what" class="selected"><a href="/signup/">Register</a></li>
+<li id="bt_faq"><a href="/openuvl/" >OpenUVL</a></li>
+<li id="bt_dmail"><a href="#" onclick="jselect('bt_dmail');return ajax_fetch('/dmail/');" bgcolour="#4CC417">Dmail</a> </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!------------------------------>
+
+<tr>
+
+<td bgcolor="#ffffff" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="40">&nbsp;</td>
+<td><!------------------our doc--------->
+<div id="login_main">
+
+<br><p align=center><font size=6>Signup</font></p>
+<div id="loading"> </div>
+<form method="post" action="/signup/" onsubmit="return validate();">
+<p id="status"
+style="background:#ffffce;color:#ff0000;font-weight:bold;text-align:center;visibility:{% if Errstatus %} visible {% else %}hidden {% endif %};
+width:100%;height:15px;"> {{Errstatus}} </p>
+
+<p align="center"> <table style="background-color: rgb(252, 233, 178); width: 654px; height: 416px;" cellpadding="6" cellspacing="15">
+<tbody>
+<tr>
+<td align="right">
+<p>Username</p>
+
+</td>
+<td align="left"> <input name="un" id="uname" maxlength="15" size="20" value="{{un}}" type="text"><input style="background-color: rgb(255, 0, 0);" name="Submit" value="Check" onclick="return ajax_check(false);" type="button"> </td>
+</tr>
+<tr>
+<td align="right">
+<p>Password</p>
+</td>
+<td align="left"> <input name="pw" maxlength="15" size="20" id="pwd" type="password"> </td>
+</tr>
+<tr>
+<td style="text-align: right;">
+<p>Confirm Password</p>
+
+</td>
+<td align="left"> <input name="confirm" maxlength="15" size="20" id="pwd2" type="password"> </td>
+</tr>
+<!----------Captha--->
+<tr>
+<td colspan="2" style="text-align: center;"><font size="3">Humanness
+Test</font>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<script type="text/javascript" src="https://api-secure.recaptcha.net/challenge?k=6LcGVAMAAAAAAPpiQs0_1jNnTuVEg5e8-hOkjIx3">
+</script></td>
+</tr>
+<!-----------till here---> <tr>
+
+<td colspan="2">
+<p align="center">By clicking on
+'I accept' below, you confirm that you accept the <a href="/tos" target="_blank">Terms of Service</a>.
+. <br>
+</p>
+<p align="center"> <input name="Submit" value="I Agree.Create my Account" onclick="return register();" type="submit"> </p>
+</td>
+</tr>
+<tr>
+<td colspan="2"> </td>
+</tr>
+</tbody>
+</table> </p>
+
+</form>
+
+
+
+</div>
+<!----------------------------->
+
+<p>&nbsp;</p>
+</td>
+<td width="25">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+
+</td>
+</tr>
+<tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<td bgcolor="#147eb7" height="24"></td>
+</tr>
+<tr>
+<td bgcolor="#1d72a0" height="44" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td class="baseline" height="26" width="30%">&nbsp;&nbsp;&copy; 2008 UVLogin.com.</td>
+<td> <a href="/tos/" target="_blank"><font color="#ffffff" size="3"><u>Terms </u></font></a>
+</td>
+<td> <a href="/help/"><font color="#ffffff" size="3"><u>Help </u></font></a>
+</td>
+<td> <a href="#" onclick="return ajax_fetch('/contact/');"><font color="#ffffff" size="3"><u>Contact Us </u></font></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>

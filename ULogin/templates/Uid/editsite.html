@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>UVLogin Home</title>
+
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta content="Keywords here" name="keywords">
+<meta content="Description here" name="description">
+<meta content="UVLogin.com" name="Author">
+<meta content="index, follow" name="robots">
+<meta content="30 days" name="revisit-after">
+<meta content="global" name="distribution">
+<meta content="general" name="rating">
+<meta content="english" name="Content-Language">
+
+    <link href="site_media/images/favicon.ico" rel="shortcut icon">
+    <link type="text/css" rel="stylesheet" href="/site_media/css/autocomplete.css">
+    <script type="text/javascript" src="/site_media/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/site_media/scripts/dimensions.js"></script>
+    <script type="text/javascript" src="/site_media/scripts/autocomplete.js"></script>
+    <link rel="stylesheet" type="text/css" href="/site_media/css/newulogin.css">
+
+</head>
+
+<body  leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+<rdoctype transitional//en="" 4.01="" html="" -//w3c//dtd="" public=""></rdoctype>
+<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tbody>
+<tr>
+<td valign=top height=113>
+<table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 120px; background-color: rgb(23, 2, 93);" height="80">
+<p align="left"><font color="#04c470" size="9"> <font color="#ff0000"> U</font>V<font color="#cdcdcd">Login<sup><font color="#ffffff" size="2">TM</font></sup><sub><font color="#ffffff" size="2">Beta</font></sub>
+</font> </font></p>
+</td>
+<td style="text-align: center; background-color: rgb(23, 2, 93);" >
+<font color="#ff0000" size="6"> "Simple
+and
+Secure" </font>
+</td>
+</tr>
+<tr>
+<td  align="left" bgcolor="#bde562" width=60% height="33" valign="center">
+<ul id="maintab">
+ <li id="bt_sites"><a href="/home/" >home</a></li>
+<li id="bt_addsite" ><a href="/home/siteadd" >add site</a></li>
+<li id="bt_ouvl" ><a href="/home/openuvl/" >OpenUVL</a></li>
+            <li id="bt_set"><a href="/home/settings/" >settings</a></li>
+                <li id="bt_dmail"><a href="#" onclick="jselect('bt_dmail');return ajax_fetch('/dmail/');" bgcolour="#4CC417">Dmail</a>
+		  <li><a href="/logout/">logout</a></li>
+</ul>
+</td>
+<td  bgcolor="#bde562"><p align=center>
+<font size=3><b>{{request.user}}'s home <b></font></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!------------------------------>
+
+<tr>
+
+<td bgcolor="#ffffff" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="40">&nbsp;</td>
+<td><!------------------our doc--------->
+<div id="uid_main">
+
+<br><p align="center"><font size="6">Edit Account</font></p>
+<div id="loading"> </div>
+<form method="get" action="/sedit/{{id}}/" >
+
+<p align="center"> <table style="background-color: rgb(252, 233, 178); width: 654px; height: 316px;" cellpadding="15" cellspacing="0">
+<tbody>
+<tr>
+
+<td align="right">
+<p>Url</p>
+
+</td>
+<td align="left"> <input name="url" id="uname" maxlength="35" size="29" value="{{url}}" type="text"> </td>
+</tr>
+          <TR>
+            <TD ALIGN="right">
+              <P>Display Name</P>
+      	      </TD>
+            <TD ALIGN="left">
+              <INPUT TYPE="TEXT" NAME="accname" MAXLENGTH="34" SIZE="29" value="{{accname}}">            </TD>
+          </TR>
+
+          <TR>
+            <TD ALIGN="right">
+              <P>Username</P>
+            </TD>
+            <TD ALIGN="left">
+              <INPUT TYPE="text" NAME="uname" MAXLENGTH="30" SIZE="29" value={{uname}}>
+            </TD>
+          </TR>
+          <TR>
+            <TD ALIGN="right">
+              <P> Password</P>
+            </TD>
+            <TD ALIGN="left">
+              <INPUT TYPE="text" NAME="pwd" MAXLENGTH="25" SIZE="29" value="Optional to change"
+style="  font-size: 12px; font-family: arial; color: rgb(112, 112, 112); " onfocus="if(this.value=='Optional to change') {this.value=''; this.type='password';}">
+            </TD>
+          </TR>
+
+	    <TR>
+            <TD COLSPAN="2">
+              <P ALIGN="center">
+                <INPUT TYPE="SUBMIT" NAME="Submit" VALUE="Submit">
+<a href="/home/"> <INPUT TYPE="button" NAME="cancel" VALUE="Cancel" > </a>
+          </form>    </P>
+            </TD>
+          </TR>
+
+<tr>
+<td colspan="2"> </td>
+</tr>
+</tbody>
+</table> <br></p>
+
+</form>
+
+
+
+
+
+</div>
+<!----------------------------->
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor="#147eb7" height="24"></td>
+</tr>
+<tr>
+<td bgcolor="#1d72a0" height="44" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td class="baseline" height="26" width="30%">&nbsp;&nbsp;&copy; 2008 UVLogin.com.</td>
+<td> <a href="/tos/" target="_blank"><font color="#ffffff" size="3"><u>Terms </u></font></a>
+</td>
+<td> <a href="/help/"><font color="#ffffff" size="3"><u>Help </u></font></a>
+</td>
+<td> <a href="#" onclick="return ajax_fetch('/contact/');"><font color="#ffffff" size="3"><u>Contact Us </u></font></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>

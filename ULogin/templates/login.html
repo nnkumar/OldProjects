@@ -1,0 +1,224 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>UVLogin-Simple and secure account  management</title>
+
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="keywords" content="ulogin,usignin,uvlogin,secure,simple,simple and secure,security,secure login, safe login,secure signin,safe signin,Dmail,disposible mail, throwaway email, spam protection,Sl2login,keyloggers,keylogger protect" />
+<meta content="Simple and secure account management site. Allows you to login in one click and protects you from keyloggers" name="description">  
+<meta content="uvlogin.com" name="Author">
+<meta content="index, follow" name="robots">
+<meta content="15 days" name="revisit-after">
+<meta content="global" name="distribution">
+<meta content="general" name="rating">
+<meta content="english" name="Content-Language">
+
+<link href="/site_media/images/favicon.ico" rel="shortcut icon">
+<script language="Javascript" type="text/JavaScript" charset="UTF-8" src="/site_media/scripts/keyboard.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="/site_media/scripts/uln_main.js"></script>
+<link rel="stylesheet" type="text/css" href="/site_media/css/newulogin.css">
+<link rel="stylesheet" type="text/css" href="/site_media/css/keyboard.css">
+<link rel="stylesheet" type="text/css" href="/site_media/css/styles2.css">
+
+
+</head>
+<body  leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+<rdoctype transitional//en="" 4.01="" html="" -//w3c//dtd="" public=""></rdoctype>
+<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tbody>
+<tr>
+<td height="113">
+<table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 120px; background-color: rgb(23, 2, 93);" height="80">
+<p align="center"><font color="#04c470" size="9"> <font color="#ff0000"> U</font>V<font color="#cdcdcd">Login<sup><font color="#ffffff" size="2">TM</font></sup><sub><font color="#ffffff" size="2">Beta</font></sub>
+</font> </font></p>
+</td>
+<td style="text-align: center; background-color: rgb(23, 2, 93);" >
+<font color="#ff0000" size="6"> Simple
+and
+Secure </font>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center" bgcolor="#bde562" height="33" valign="bottom">
+<ul id="maintab">
+<li id="bt_what" class="selected"><a href="#" onclick="jselect('bt_what');return ajax_fetch('/what/');">Login</a></li>
+<li id="bt_faq"><a href="/signup/" >Register</a></li>
+<li><a href="/openuvl/">OpenUVL</a></li>
+<li id="bt_dmail"><a href="#" onclick="jselect('bt_dmail');return ajax_fetch('/dmail/');" bgcolour="#4CC417">Dmail</a> </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+
+<tr>
+<td valign="top" >
+<table style="width: 100%;height:100%;" bgcolor="#c9d7f1" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td rowspan="2" valign="top" width="150">
+<table border="0" cellspacing="0" width="100%">
+<!--cellpadding="12"--> <tbody>
+<tr>
+<td align="center"> <br>
+<h2>Login</h2>
+<table border="1">
+<tbody>
+<tr>
+<td><input name="next" value="/home/" type="hidden">
+<table border="0" cellpadding="8" width="100%">
+<form action="." method="post">
+<tr>
+<td align="left" valign="bottom">
+<p> Username <input name="username" value="{{Uname}}" class="keyboardInput" maxlength="30" size="17%" type="text"> </p>
+</td>
+</tr>
+<tr>
+<td align="left" valign="middle">
+<p>Password <input name="password" class="keyboardInput"  maxlength="15" size="17%" type="password"> </p>
+</td>
+</tr>
+<TR > <TD align=right>
+    &nbsp &nbsp  
+    &nbsp &nbsp  
+    <INPUT TYPE="SUBMIT" NAME="Submit" VALUE="Login">
+ </TD></TR>
+<input type="hidden" name="next" value="/home/" >
+</form></table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<a href="#" onclick="return ajax_fetch('/recvform/');"><font color=#000000 size=3><u>Forgot Password?</u></font></a>
+
+
+<font size="3"> </font></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td bgcolor="#ffffff" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="40">&nbsp;</td>
+<td>
+<p id="status"  
+style="background:#ffffce;color:#ff0000;font-weight:bold;text-align:center;visibility:{% if Errstatus %} visible {% else %} hidden {% endif %};
+width:100%;height:15px;"> {{Errstatus}} </p>
+</p>
+<div id="login_main">
+<font size="3">
+<p align="center"><font size="7"><b>Universal
+Login</b><sup><font size="1">TM</font></sup></font><br>
+<font size="2">ALL in 1 Account
+Management Site</font></p>
+<font color="#0000ff" size="4"><font color="#ff0000">U<font color="#4cc417">V</font></font>Login<sup><font size="1">TM</font></sup></font>
+<p style="margin-left: 50px;"><font size="3"><big style="font-weight: bold; font-style: italic;">Universal</big>
+Login enables you to access all our accounts with a single signin.</font></p>
+<ul style="margin-left: 50px;" align="center">
+<li>You dont need to <i><b>remember</b></i>
+large number of username and passwords.
+</li>
+<li>Will save you the <big style="font-weight: bold; font-style: italic;">time</big>
+to open the login page and type in details.
+</li>
+<li> <big style="font-weight: bold; font-style: italic;">
+Multiple accounts</big> with the same website can be
+easily managed.
+</li>
+</ul>
+<hr><font color="#ff0000" size="4">Virtual</font><font color="#0000ff" size="4">Keyboard
+</font><br>
+<br>
+<font style="margin-left: 50px;">
+<big><span style="font-weight: bold; font-style: italic;">Virtual Keyboard </span></big>
+allows you to enter your passwords with out the fear of being tracked. This will ensure you protection from keyloggers.They are programs running the background to track the keys pressed and notify the person who installed them about the info you typed. Thus you have a high chance of loosing your passwords when accounts are accessed from insecure system like that in internat cafes, which may unavoidable while travelling.Our virtual keyboard eliminates such possibilities. Once you enter the site using VirtualKeyboard you can access all your accounts in just one-click<br><br>
+If you dont want to create account or store your account details with us,you can try out our<big style="font-weight: bold; font-style: italic;"> OpenUVL </big>which provides  one-click login with VirtualKeyboard.
+
+<hr>
+<font color="#ff0000" size="4">Open</font><font color="#0000ff" size="4">ID</font><br>
+<br>
+<font style="margin-left: 50px;">
+
+OpenID is a free and easy way to use a single digital identity across the Internet. When UVLogin allows you to manage all your password protected accounts, OpenID will make even registration on many sites unnecessary. With OpenID ie. "username.uvlogin.com" you can login to a large number of sites without registering in any of them. 
+<br>Check out the sites supporting OpenID <br>
+<ul>
+<li><u><a href="https://www.myopenid.com/directory">myOpenID Site Directory</a> </u><br></li>
+<li><u><a href="http://openiddirectory.com/">The OpenID Directory</a></u></li>
+</ul>
+</font>
+
+<hr>
+<font color="#ff0000" size="4">D</font><font color="#0000ff" size="4">Mail<sup><font size="1">TM</font></sup></font><br>
+<br>
+<font style="margin-left: 50px;">
+Disposible mail provide <big style="font-weight: bold; font-style: italic;">temporary
+mail ids</big> which can be used for purposes like account
+registration in various sites. After the usage the mail can be deleted
+and thus the Id disposed. It also dont require you have any login
+procedure thus saving your <big style="font-weight: bold; font-style: italic;">time</big>
+also.
+</font>
+<div style="margin-left: 50px;"><br>
+Dmail will eliminate the need to
+<ul>
+<li> reveal your accounts.
+</li>
+<li> need of login to them.
+</li>
+<li> chance of <big style="font-weight: bold; font-style: italic;">spamming</big>
+them. </li>
+</ul>
+</div>
+</font>
+</div>
+
+<!----------------------------->
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td align="center" width="145">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</td>
+<td width="25">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor="#147eb7" height="24"></td>
+</tr>
+<tr>
+<td bgcolor="#1d72a0" height="44" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td class="baseline" height="26" width="30%">&nbsp;&nbsp; &copy; 2008 Usignin.com.</td>
+<td> <a href="/tos/"><font color="#ffffff" size="3"><u>Terms </u></font></a>
+</td>
+<td> <a href="/help/"><font color="#ffffff" size="3"><u>Help </u></font></a>
+</td>
+<td> <a href="#" onclick="return ajax_fetch('/contact/');"><font color="#ffffff" size="3"><u>Contact Us </u></font></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>

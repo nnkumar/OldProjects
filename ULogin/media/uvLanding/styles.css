@@ -1,0 +1,93 @@
+
+
+
+body.landing {
+	background	: url(images/mainbg.png) repeat-x;
+	padding	: 0px;
+	margin	: 0px;
+}
+
+.container {
+	width		: 1024px;
+	background	: url(images/mainbg.png) repeat-x;
+	min-height	: 768px;
+	text-align	: left;
+}
+
+.header {
+	width		: 100%;
+	height	: 15%;
+	background	: none;
+	margin-top	: 5px;
+	padding-top	: 5px;
+}
+
+.data_holder {
+	width		: 100%;
+	height	: 85%;
+	background	: none;
+	margin-top	: 10px;
+	border	: 0px solid #DDD;
+}
+
+.landing_links {
+	float		: left;
+	width		: 12%;
+	height	: 100%;
+	padding-top	: 10%;
+	padding-left: 30px;
+}
+
+
+.landing_data {
+	margin-top	: 15px;
+	padding-top	: 50px;
+	float		: left;
+	width		: 82%;
+	height	: 100%;
+	background	: url(images/mainbg.png) repeat-x;
+	border	: 4px solid #AAAAAA;
+	-moz-border-radius-topright	: 12px;
+
+	
+}
+
+.landing_tab {
+	padding-top	: 3px;
+	width		: 100px;
+	margin-top	: 15px;
+	text-align	: center;
+	height	: 22px;
+	color		: #777777;
+	font-weight	: bold;
+	font-size	: 10.5pt;
+	background	: url(images/tab1.gif) repeat-x;
+	border-left	: 1px solid #AAAAAA;
+	border-right: 1px solid #AAAAAA;
+}
+
+.landing_tab_selected {
+	display	: none;
+	padding-top	: 3px;
+	width		: 120px;
+	margin-top	: 15px;
+	text-align	: center;
+	height	: 25px;
+	color		: #DDDDDD;
+	font-weight	: bold;
+	font-size	: 14.5t;
+	background	: #AAAAAA;
+	border	: 3px solid #CCCCCC;
+	-moz-border-radius-bottomleft : 5px;
+	-moz-border-radius-topleft	: 5px;
+
+}
+
+
+.login_box {
+	width		: 50%;
+	height	: 30px;
+	float		: right;
+	font-size	: 10pt;
+	color		: #AAAAAA;
+}
